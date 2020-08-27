@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>하이</title>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
+</head>
+
+</head>
+
+<body>
+  <header class="first-img back-img" id="top">
+    <div class="main-text">
+      류창천 Portfolio
+    </div>
+    <a href='javascript:window.scroll(0, getOffsetTop(document.getElementById("aboutme")));' class="start-btn">START</a>
+    </div>
+  </header>
+
+  <nav id="nav">
+    <ul>
+      <a href='javascript:window.scroll(0, getOffsetTop(document.getElementById("top")));' class="top-page">류창천</a>
+      <div class="button-div" onclick="menu_button()">
+        <input type="checkbox" id="menu-button">
+        <label for="menu-button">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+      </div>
+
+
+      <div class="menu">
+        <li><a href='javascript:window.scroll(0, getOffsetTop(document.getElementById("aboutme")));'>About Me</a></li>
+        <li><a href='javascript:window.scroll(0, getOffsetTop(document.getElementById("skill")));'>Skill</a></li>
+        <li><a href='javascript:window.scroll(0, getOffsetTop(document.getElementById("project")));'>Project</a></li>
+        <li><a href='javascript:window.scroll(0, getOffsetTop(document.getElementById("adress")));'>Adress</a></li>
+      </div>
+
+    </ul>
+  </nav>
+
+  <div id="aboutme" class="second-div">
+    <h1>About Me</h1>
+    <hr class="under-hr">
+    <div class="info">
+      <h2>류창천(유창천)</h2>
+      <h3>1996.03.25</h3>
+      <p>2012.03 ~ 2015.02 서울 경성고등학교 졸업</p>
+      <p>2016.03 ~ 2021.02 대림대학교 졸업</p>
+      <p>2017.05 ~ 2019.02 육군 병장 만기 전역</p>
+    </div>
+  </div>
+
+  <div id="skill" class="skill-div">
+    <h1>Skill</h1>
+    <hr class="under-hr">
+    <div class="character">
+      <img src="img/first-icon.png" alt="">
+      <h2>HTML5</h2>
+    </div>
+    <div class="character none-float">
+      <img src="img/second-icon.png" alt="">
+      <h2>CSS3</h2>
+    </div>
+    <div class="character">
+      <img src="img/fifth-icon.png" alt="">
+      <h2>BootStrap</h2>
+    </div>
+    <div class="character">
+      <img src="img/third-icon.png" alt="">
+      <h2>JavaScript</h2>
+    </div>
+    <div class="character">
+      <img src="img/fourth-icon.png" alt="">
+      <h2>React</h2>
+    </div>
+
+  </div>
+
+  <div id="project" class="Project">
+    <div class="project-title">
+      <h1>Project</h1>
+      <hr class="under-hr">
+    </div>
+    <div class="project-Content">
+      <h2>대중장</h2>
+      <img class="slideImage" src="img/대중장1.PNG" alt="">
+      <img class="slideImage" src="img/대중장2.PNG" alt="">
+      <img class="slideImage" src="img/대중장3.PNG" alt="">
+      <div class="about-project">
+        <h2>대중장이란?</h2>
+        <p>대림대 학생들이 이용하는 중고장터 사이트입니다.</p>
+        <br>
+        <h2>사이트 구성</h2>
+        <p>메인페이지, 회원가입, 상품 페이지, 공지사항, QnA</p>
+        <br>
+        <h2>사이트 기능</h2>
+        <p>회원가입, 상품 업로드</p>
+        <br>
+        <h2>사용 기술</h2>
+        <p>FrontEnd: HTML, CSS, JavaScript, React</p>
+        <p>BackEnd: Node.js</p>
+        <br>
+        <hr>
+        <br>
+        <p>React를 사용하여 만든 첫 사이트입니다. React를 활용법, 이해력을 높이는 계기가 되었습니다.</p>
+        <a class="git-adress" href="https://github.com/dudjslsk/DaelimshopFront">Github(미완)</a>
+        <br>
+        <a class="git-adress" href="">Github(Front Only)</a>
+      </div>
+    </div>
+
+    <div class="project-Content2">
+      <h2>FooDrink(진행중)</h2>
+      <img class="slideImage2" src="img/foodrink.PNG" alt="">
+      <img class="slideImage2" src="img/foodrink2.PNG" alt="">
+      <div class="about-project">
+        <h2>FooDrink란?</h2>
+        <p>술과 궁합이 잘 맞는 음식을 페어링 해주는 Food Pairing의 정보를 제공 해주는 사이트입니다.</p>
+        <br>
+        <h2>사이트 구성</h2>
+        <p>메인페이지, FooDrink 소개, 문의하기 (one page) / 술과 음식을 검색할 수 있는 검색 페이지</p>
+        <br>
+        <h2>사이트 기능</h2>
+        <p>Contact Us를 통한 이메일 보내기, 술 혹은 음식을 검색하면 어울리는 술과 음식을 보여주는 검색기능</p>
+        <br>
+        <h2>사용 기술</h2>
+        <p>HTML, CSS, JavaScript, React(Hooks), Redux(사용예정)</p>
+        <br>
+        <hr>
+        <br>
+        <p>React Hooks와 Redux를 이용해서 만들고 있는 사이트입니다.</p>
+        <p>그 전에는 Class Component로 공부를 하고 활용했다면, 이번 사이트는 function Component를 사용하고 React Hooks를 사용하여 제작 중입니다.</p>
+        <p>상태관리를 보다 더 효율적으로 사용하기 위해 Redux를 사용 할 예정입니다.</p>
+        <br>
+        <a class="git-adress" href="https://github.com/crewd/FooDrink">Github</a>
+      </div>
+    </div>
+  </div>
+
+    <div class="download">
+      <h1>github</h1>
+      <a href="https://github.com/crewd" class="git-btn" target="blank">github</a>
+    </div>
+
+    <div id="adress" class="call">
+      <h1>연락처</h1>
+      <hr class="under-hr2">
+      <br>
+      <div class="phone-wrapper">
+        <i class="fa fa-phone fa-3x phone"></i>
+        <div>010-5096-6877</div>
+      </div>
+
+      <div class="email-wrapper">
+        <i class="fas fa-envelope fa-3x email"></i>
+        <div>changcheon.ryu@gmail.com</div>
+      </div>
+    </div>
+    <footer>
+      copyright&copy; crewd
+    </footer>
+    <script>
+
+      window.onscroll = function () {
+        var navScroll = window.scrollY;
+        var nav = document.getElementById("nav");
+        if (window.outerWidth > 1024) {
+          if (navScroll > 100) {
+            nav.style.backgroundColor = '#B2BAE3';
+          }
+          else {
+            nav.style.backgroundColor = 'rgba(0, 0, 0, 0)';
+          }
+        }
+
+        if (navScroll > 100) {
+          nav.style.boxShadow = "0 5px 15px rgba(0,0,0, .15)"
+        }
+
+        else {
+          nav.style.boxShadow = "0 0"
+        }
+
+      };
+
+      function menu_button() {
+        var btn = document.getElementById("menu-button");
+
+
+        if (btn.checked) {
+          document.getElementsByClassName("menu")[0].style.maxHeight = "300px";
+        }
+        else if (!btn.checked) {
+          document.getElementsByClassName("menu")[0].style.maxHeight = "0";
+        }
+      };
+
+      window.menu_button();
+
+      function getOffsetTop(el) {
+        var top = -50;
+        if (el.offsetParent) {
+          do {
+            top += el.offsetTop;
+          } while (el = el.offsetParent);
+          return [top];
+        }
+      }
+
+      let index = 0;
+      window.onload = () => {
+        imageSlide();
+      }
+
+      const imageSlide = () => {
+        let i;
+        let image = document.getElementsByClassName("slideImage");
+        let image2 = document.getElementsByClassName("slideImage2");
+
+        for (i = 0; i < image.length; i++) {
+          image[i].style.display = "none";
+        }
+
+        for (i = 0; i < image2.length; i++) {
+          image2[i].style.display = "none";
+        }
+
+
+        index++;
+
+        if (index > image2.length) {
+          index = 1;
+        }
+
+        image[index - 1].style.display = "block";
+
+        if (index > image2.length) {
+          index = 1;
+        }
+        
+        image2[index - 1].style.display = "block";
+        setTimeout(imageSlide, 3000)
+      }
+
+      const prev = () => {
+        index -= 1;
+      }
+
+    </script>
+</body>
+
+</html>
